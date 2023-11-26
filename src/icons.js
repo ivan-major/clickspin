@@ -7,10 +7,6 @@ import facebook from '@/assets/icons/facebook.svg?raw'
 import google from '@/assets/icons/google.svg?raw'
 import metamask from '@/assets/icons/metamask.svg?raw'
 import apple from '@/assets/icons/apple.svg?raw'
-// import avatar from '@/assets/icons/avatar.svg?raw'
-// import location from '@/assets/icons/location.svg?raw'
-// import emailContact from '@/assets/icons/email-contact.svg?raw'
-// import close from '@/assets/icons/close.svg?raw'
 
 export default {
     logo,

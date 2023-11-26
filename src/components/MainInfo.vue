@@ -45,15 +45,8 @@ const onOpenForm = () => {
 .main-info {
     position: relative;
     padding-top: rem(56);
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    // gap: 24px;
-    // justify-content: center;
     min-height: rem(453);
     flex: 1;
-    // height: 50%;
-    // flex-grow: 1;
     width: 100%;
     background-color: $main-color;
     overflow: hidden;
@@ -82,18 +75,19 @@ const onOpenForm = () => {
     &__diamond {
         bottom: rem(3.81);
         left: rem(4.25);
-        width: rem(116);
-        height: rem(116);
-
-        animation: brilliant 5s infinite;
+        width: rem(117);
+        height: rem(117);
+        transform: rotate(-42.307deg);
+        filter: sepia(1.2);
     }
 
     &__brilliant {
         bottom: rem(11.79);
         right: rem(20.85);
-        width: rem(67);
-        height: rem(67);
-
+        width: rem(54.164);
+        height: rem(54.164);
+        filter: sepia(1.2);
+        
         animation: brilliant 3s infinite;
     }
 
@@ -141,7 +135,6 @@ const onOpenForm = () => {
     }
 }
 
-
 @include desc {
     .main-info {
         height: 100%;
@@ -158,7 +151,6 @@ const onOpenForm = () => {
         &__container {
             padding: 0;
             align-items: start;
-            // justify-content: start;
             gap: 101px;
             text-align: start;
         }
@@ -170,6 +162,7 @@ const onOpenForm = () => {
             left: rem(-107);
             width: rem(312);
             height: rem(312);
+            transform: rotate(-42.307deg);
         }
 
         &__brilliant {

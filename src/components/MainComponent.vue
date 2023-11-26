@@ -57,7 +57,6 @@ const onCloseFrom = () => {
     .main {
         flex-direction: row;
         height: 100vh;
-        // min-height: none;
     }
 }
 </style>

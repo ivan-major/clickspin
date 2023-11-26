@@ -27,8 +27,6 @@ import Image from "./Image.vue"
     position: relative;
     display: inline-flex;
     min-height: rem(453);
-    // flex-grow: 1;
-    // height: 100%;
     flex: 1;
     width: 100%;
     background-image: url(@/assets/images/illustration.png);
@@ -37,7 +35,6 @@ import Image from "./Image.vue"
     background-size: cover;
     background-position: center;
 
-    // z-index: 1;
     &__img {
         position: absolute;
     }
@@ -102,7 +99,6 @@ import Image from "./Image.vue"
 
         &__img-candy {
             bottom: rem(321.49);
-            // right: rem(859);
             left: rem(-173);
             width: rem(274);
             height: rem(274);
@@ -110,7 +106,6 @@ import Image from "./Image.vue"
 
         &__img-chip {
             top: rem(-54);
-            // left: rem(-107);
             width: rem(251.831);
             height: rem(297.727);
         }
@@ -122,7 +117,6 @@ import Image from "./Image.vue"
         }
 
         &__img-buble {
-            // top: rem(0.04);
             right: rem(-170.49);
             width: rem(545.247);
             height: rem(545.247);

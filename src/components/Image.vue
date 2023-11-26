@@ -16,9 +16,6 @@ const props = defineProps({
     display: inline-flex;
     height: 100%;
     width: 100%;
-    // font-size: rem(32);
-    // line-height: 1;
-    // background-image: url(@/assets/images/diamond.png);
 
     background-repeat: no-repeat;
     background-size: cover;
@@ -26,11 +23,11 @@ const props = defineProps({
     z-index: 1;
 
     &__diamond {
-        background-image: url(@/assets/images/diamond.svg);
+        background-image: url(@/assets/images/diamond.png);
     }
 
     &__brilliant {
-        background-image: url(@/assets/images/brilliant.svg);
+        background-image: url(@/assets/images/brilliant.png);
     }
 
     &__light {

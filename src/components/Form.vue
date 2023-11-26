@@ -78,8 +78,6 @@
                 </label>
             </div>
 
-            <!-- <div class="form__button">
-            </div> -->
             <button
                 :class="`form__button ${
                     isValidForm
@@ -224,19 +222,6 @@ const onSubmit = (event) => {
     console.log(body)
 }
 
-// watch(
-//     () => form.email.value,
-//     (value) => {
-//         isValidInput.value.email = emailValidator(value)
-//     }
-// )
-
-// watch(
-//     () => form.password.value,
-//     (value) => {
-//         isValidInput.value.password = passwordValidator(value)
-//     }
-// )
 </script>
 
 <style lang="scss">
@@ -244,9 +229,7 @@ const onSubmit = (event) => {
     background-color: $form-background-color;
     position: relative;
     padding: rem(16);
-    // bottom: 0;
-    // left: 0;
-    // z-index: 100;
+
     &__container {
         display: flex;
         flex-direction: column;
@@ -297,12 +280,7 @@ const onSubmit = (event) => {
         &:-webkit-autofill {
             -webkit-box-shadow: inset 0 0 0 50px $form-background-color !important;
             -webkit-text-fill-color: $input-text-color !important;
-            // opacity: 0 !important;
         }
-
-        // &-email {
-        //     background-image: url(@/assets/icons/email.svg) !important;
-        // }
 
         &-password {
             background-image: url(@/assets/icons/bxs_lock.svg);

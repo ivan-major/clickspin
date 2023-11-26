@@ -55,11 +55,6 @@ import Image from "./Image.vue"
     min-height: rem(318);
     background: linear-gradient(180deg, #130625 0%, #1b0929 100%);
     padding-top: rem(54);
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    // justify-content: center;
-    // gap: 17px;
     position: relative;
     overflow: hidden;
 

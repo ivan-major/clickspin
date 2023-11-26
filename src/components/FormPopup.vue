@@ -34,9 +34,6 @@ import Icon from "./Icon.vue"
     padding: rem(28);
     overflow: scroll;
 
-    // &__container {
-    // }
-
     &__close {
         position: absolute;
         top: rem(38);
@@ -44,9 +41,6 @@ import Icon from "./Icon.vue"
         z-index: 100;
         cursor: pointer;
     }
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
 }
 
 @include desc {
