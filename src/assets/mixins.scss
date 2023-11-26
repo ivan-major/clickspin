@@ -1,0 +1,5 @@
+@mixin desc {
+    @media screen and (min-width: 120em) {
+        @content;
+    }
+}
