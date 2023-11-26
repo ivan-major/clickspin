@@ -56,5 +56,10 @@ const props = defineProps({
     &__name {
         background-image: url(@/assets/images/name.png);
     }
+
+    &__lights-forms {
+        background-image: url(@/assets/images/lights-forms.png);
+        background-position: top;
+    }
 }
 </style>
