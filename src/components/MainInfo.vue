@@ -5,7 +5,7 @@
 
             <div class="main-info__container">
                 <MainTitleComponent />
-                <RegistrationButton @open-from="onOpenForm"/>
+                <RegistrationButton @open-from="onOpenForm" />
             </div>
         </div>
 
@@ -84,6 +84,8 @@ const onOpenForm = () => {
         left: rem(4.25);
         width: rem(116);
         height: rem(116);
+
+        animation: brilliant 5s infinite;
     }
 
     &__brilliant {
@@ -91,6 +93,8 @@ const onOpenForm = () => {
         right: rem(20.85);
         width: rem(67);
         height: rem(67);
+
+        animation: brilliant 3s infinite;
     }
 
     &__light-1 {
@@ -98,6 +102,8 @@ const onOpenForm = () => {
         right: rem(-11);
         width: rem(84);
         height: rem(84);
+
+        animation: fade 2s infinite;
     }
 
     &__light-2 {
@@ -106,8 +112,35 @@ const onOpenForm = () => {
         width: rem(75);
         height: rem(45);
         transform: rotate(-21.748deg);
+
+        animation: fade 2s infinite;
     }
 }
+
+@keyframes fade {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes brilliant {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 
 @include desc {
     .main-info {
@@ -123,12 +156,12 @@ const onOpenForm = () => {
         }
 
         &__container {
-        padding: 0;
-        align-items: start;
-        // justify-content: start;
-        gap: 101px;
-        text-align: start;
-    }
+            padding: 0;
+            align-items: start;
+            // justify-content: start;
+            gap: 101px;
+            text-align: start;
+        }
     }
 
     .image {

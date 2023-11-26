@@ -36,7 +36,7 @@ import Image from "./Image.vue"
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    
+
     // z-index: 1;
     &__img {
         position: absolute;
@@ -55,6 +55,13 @@ import Image from "./Image.vue"
         width: rem(74.31);
         height: rem(64.65);
         transform: rotate(-8.779deg);
+
+        animation: spin 5s linear 0s infinite;
+    }
+
+    @keyframes spin {
+        from {transform:rotate(0deg);}
+        to {transform:rotate(360deg);}
     }
 
     &__img-chip {
@@ -63,6 +70,7 @@ import Image from "./Image.vue"
         width: rem(77.47);
         height: rem(91.59);
         transform: rotate(-28.899deg);
+        animation: spin 5s linear 0s infinite,
     }
 
     &__img-name {
